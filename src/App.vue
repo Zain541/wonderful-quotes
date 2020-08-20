@@ -1,8 +1,9 @@
 <template>
-
+  <app-quote-grid :quotes="quotes"></app-quote-grid>
 </template>
 
 <script>
+import QuoteGrid from './components/QuoteGrid.vue';
 export default{
   data: function(){
     return {
@@ -11,6 +12,10 @@ export default{
       ],
       maxQuotes:10
     }
+  },
+
+  components: {
+    appQuoteGrid: QuoteGrid
   }
 }
 </script>
