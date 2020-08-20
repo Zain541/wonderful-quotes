@@ -1,7 +1,9 @@
 <template>
-    <div class="row">
-        <app-quote v-for="quote in quotes">{{ quote }}</app-quote>
+<div>
+    <div class="row" v-for="quote in quotes">
+        <app-quote>{{ quote }}</app-quote>
     </div>
+</div>
 </template>
 
 
